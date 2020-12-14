@@ -1,0 +1,194 @@
+/* CSS Variables */
+
+:root {
+  --main-color: #e3e2df;
+  --second-color: #000000;
+  --third-color: #b3326a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6rem;
+  background-color: var(--main-color);
+  z-index: 1;
+  transition: 0.5s;
+}
+
+header.scroll {
+  position: fixed;
+  top: -6rem;
+  left: 0;
+  width: 100%;
+  height: 6rem;
+  background-color: var(--main-color);
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.logo {
+  position: absolute;
+  left: 10%;
+  bottom: 1rem;
+  font-size: 3.5rem;
+  color: var(--second-color);
+  font-family: "Pinyon Script", cursive;
+}
+
+nav {
+  position: absolute;
+  left: 30%;
+  bottom: 1rem;
+  width: 60%;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--second-color);
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+nav ul li a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  background: var(--second-color);
+  transition: width 0.3s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+}
+
+/* Home  */
+.one {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--main-color);
+  background-image: url(/images/hero.jpg);
+  background-size: cover;
+}
+
+.container {
+  position: absolute;
+  left: 10%;
+  top: 30%;
+  width: 50%;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  color: var(--third-color);
+  font-size: 1.5rem;
+}
+
+.one .container p {
+  color: var(--main-color);
+  font-size: 13px;
+}
+
+/* .two {
+  position: absolute;
+  top: 100vh;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--third-color);
+} */
+
+/* About */
+
+/* Image Gallery */
+.image-gallery {
+  background-color: var(--main-color);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-top: 7rem;
+}
+
+.single-image {
+  padding: 0 20px 20px;
+}
+
+.gall-image {
+  width: 500px;
+  border-radius: 5px;
+}
+
+.gall-image:hover {
+  opacity: 0.6;
+  transition: 0.9s;
+}
+
+/* Contact Form */
+
+.form-container {
+  margin: auto;
+  max-width: 600px;
+  min-height: 600px;
+  margin-top: 8rem;
+  padding-top: 6rem;
+  background-color: rgb(67, 94, 151);
+  border: 3px solid var(--main-color);
+  border-radius: 10px;
+}
+
+.contact-heading {
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--main-color);
+  font-size: 30px;
+  font-weight: 4em;
+  padding-bottom: 10px;
+}
+
+input,
+textarea {
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+  width: 270px;
+  background-color: rgb(67, 94, 151);
+  border: 2px solid var(--main-color);
+  color: var(--main-color);
+  border-radius: 5px;
+}
+
+.contact-submit-button {
+  margin: 20px auto;
+  display: block;
+  padding: 10px;
+  background-color: rgb(67, 94, 151);
+  border: 2px solid var(--main-color);
+  color: var(--main-color);
+  border-radius: 5px;
+  width: 270px;
+}
+
+#contact-message {
+  height: 100px;
+}
