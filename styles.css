@@ -22,6 +22,7 @@ header {
   background-color: var(--main-color);
   z-index: 1;
   transition: 0.5s;
+  border-bottom: 3px solid var(--third-color);
 }
 
 header.scroll {
@@ -37,7 +38,7 @@ header.scroll {
 
 .logo {
   position: absolute;
-  left: 10%;
+  left: 7%;
   bottom: 1rem;
   font-size: 3.5rem;
   color: var(--second-color);
@@ -46,9 +47,9 @@ header.scroll {
 
 nav {
   position: absolute;
-  left: 30%;
+  left: 20%;
   bottom: 1rem;
-  width: 60%;
+  width: 70%;
 }
 
 nav ul {
@@ -94,7 +95,7 @@ nav ul li a:hover::after {
   position: absolute;
   left: 10%;
   top: 30%;
-  width: 50%;
+  width: 60%;
 }
 
 h1 {
@@ -118,6 +119,26 @@ h1 {
 } */
 
 /* About */
+.about-section {
+  background-color: var(--third-color);
+  margin-top: 5em;
+  margin-right: auto;
+  margin-left: auto;
+  height: 100vh;
+  background-color: rgb(67, 94, 151);
+}
+
+.about-section .about-text {
+  max-width: 60%;
+  padding-top: 4em;
+  padding-bottom: 3em;
+  justify-content: center;
+  align-content: center;
+  margin: auto;
+  line-height: 2em;
+  font-size: 1.1em;
+  color: var(--main-color);
+}
 
 /* Image Gallery */
 .image-gallery {
@@ -132,6 +153,7 @@ h1 {
 
 .single-image {
   padding: 0 20px 20px;
+  justify-content: space-between;
 }
 
 .gall-image {
@@ -148,13 +170,11 @@ h1 {
 
 .form-container {
   margin: auto;
-  max-width: 600px;
-  min-height: 600px;
-  margin-top: 8rem;
+  min-height: 100vh;
+  margin-top: 6rem;
   padding-top: 6rem;
   background-color: rgb(67, 94, 151);
-  border: 3px solid var(--main-color);
-  border-radius: 10px;
+  border-bottom: 3px solid var(--third-color);
 }
 
 .contact-heading {
@@ -178,6 +198,11 @@ textarea {
   border-radius: 5px;
 }
 
+input::placeholder,
+textarea::placeholder {
+  color: var(--main-color);
+}
+
 .contact-submit-button {
   margin: 20px auto;
   display: block;
@@ -191,4 +216,28 @@ textarea {
 
 #contact-message {
   height: 100px;
+}
+
+@media screen and (max-width: 500px) {
+  nav {
+    position: absolute;
+    left: 17%;
+    bottom: 1rem;
+    width: 80%;
+  }
+
+  nav ul li a {
+    font-size: 12px;
+  }
+
+  .form-container {
+    padding-top: 2.5em;
+  }
+  .about-section .about-text {
+    font-size: 14px;
+  }
+
+  .gall-image {
+    width: 100%;
+  }
 }
