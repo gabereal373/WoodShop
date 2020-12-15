@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -25,11 +25,11 @@
   <form action="">
     <div class="form-container">
       <h1 class="contact-heading">Contact Us</h1>
-      <input type="text" placeholder="Your Name">
-      <input type="text" placeholder="Your Address">
-      <input type="text" placeholder="Your Email">
-      <textarea id="contact-message" type="text" placeholder="Your Message"></textarea>
-      <button class="contact-submit-button" type="submit">Send</button>
+      <input id="name" type="text" placeholder="Your Name" value="name">
+      <input id="address" type="text" placeholder="Your Address" value="address">
+      <input id ="email" type="text" placeholder="Your Email" value="email">
+      <textarea id="contact-message" type="text" placeholder="Your Message" value ="message"></textarea>
+      <button class="contact-submit-button" type="submit" onclick="send()">Send</button>
     </div>
   </form>
   <!-- <script src="app.js"></script> -->
