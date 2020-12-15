@@ -126,27 +126,25 @@ h1 {
   margin-right: auto;
   margin-left: auto;
   height: 100vh;
-  background-color: rgb(67, 94, 151);
   padding-top: 1px;
-  /* padding-bottom: 5px; */
 }
 
 .about-wrapper {
-  background-color: red;
   max-width: 75%;
   max-height: 75%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 3.5em;
   border: 1px solid var(--main-color);
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
+  overflow-y: auto;
 }
 
 .about-section .about-text {
   align-content: center;
   padding: 20px;
   line-height: 2.2em;
-  font-size: 1.2em;
+  font-size: 1.4em;
   color: var(--main-color);
 }
 
@@ -184,7 +182,7 @@ h1 {
   overflow: hidden;
   margin: auto;
   min-height: 100vh;
-  margin-top: 6rem;
+  margin-top: 5rem;
   padding-top: 6rem;
   border-bottom: 3px solid var(--third-color);
 }
@@ -244,7 +242,12 @@ input:hover {
 
 @media screen and (max-width: 800px) {
   .about-section .about-text {
-    font-size: 14px;
+    font-size: 16px;
+  }
+  .about-wrapper {
+    min-height: 90%;
+    min-width: 95%;
+    margin-top: 2em;
   }
   .form-container {
     padding-top: 2.5em;
@@ -259,20 +262,20 @@ input:hover {
     margin-left: 20px;
     max-width: 50%;
     min-height: 70%;
-    border-radius: 4px;
+    border-radius: 8px;
   }
 
   .about-section .pop-up-image-wrapper {
-    background-image: url(/images/gall-image-12.jpg);
+    background-image: url(/images/gall-image-4.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     object-fit: cover;
     min-height: 45%;
     min-width: 40%;
-    margin-top: 11%;
+    margin-top: 12%;
     margin-right: 4%;
-    border: 1px solid var(--main-color);
-    border-radius: 4px;
+    border: 3px solid var(--main-color);
+    border-radius: 50%;
     float: right;
   }
 }
@@ -296,7 +299,7 @@ input:hover {
   }
 
   .about-section .about-text {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .about-wrapper {
@@ -310,5 +313,11 @@ input:hover {
 
   .gall-image {
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
+  .about-section .about-text {
+    font-size: 25px;
   }
 }
