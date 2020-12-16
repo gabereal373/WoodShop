@@ -20,6 +20,7 @@ async function contactUs() {
     finally {
         client.close();
     }
+    
 };
 
 
