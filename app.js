@@ -1,5 +1,7 @@
-const { MongoClient } = require("mongodb");      //create client class
+const { MongoClient } = require("mongodb")      //create client class
 const uri = "mongodb://10.0.0.208:27017"
+
+
 
 
 async function contactUs() {
@@ -20,7 +22,7 @@ async function contactUs() {
     finally {
         client.close();
     }
-    
-};
 
+};
+contactUs();
 
