@@ -104,15 +104,15 @@ h1 {
   margin-bottom: 1rem;
   color: var(--third-color);
   font-size: 2rem;
-  font-weight: lighter;
-  /* text-shadow: 1px 1.2px var(--second-color); */
+  /* font-weight: lighter;
+  text-shadow: 0.5px 0.5px var(--second-color); */
 }
 
 .one .container p,
 .two .container p {
   color: var(--main-color);
   font-size: 19px;
-  /* text-shadow: 1px 1.2px var(--second-color); */
+  /* text-shadow: 0.5px 0.5px var(--second-color); */
 }
 
 .two {
@@ -129,10 +129,6 @@ h1 {
 
 .two .container p {
   color: var(--main-color);
-  /* text-shadow: 0.5px 0.5px var(--second-color); */
-}
-
-.two .container h1 {
   /* text-shadow: 0.5px 0.5px var(--second-color); */
 }
 
