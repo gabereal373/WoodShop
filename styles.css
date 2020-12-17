@@ -3,7 +3,7 @@
 :root {
   --main-color: #e3e2df;
   --second-color: #000000;
-  --third-color: #e05b95;
+  --third-color: #e3e2df;
 }
 
 * {
@@ -22,7 +22,6 @@ header {
   background-color: var(--main-color);
   z-index: 1;
   transition: 0.5s;
-  border-bottom: 2px solid var(--second-color);
 }
 
 header.scroll {
@@ -43,6 +42,7 @@ header.scroll {
   font-size: 3.5rem;
   color: var(--second-color);
   font-family: "Pinyon Script", cursive;
+  text-shadow: 0.5px 0.5px var(--third-color);
 }
 
 nav {
@@ -56,6 +56,7 @@ nav ul {
   display: flex;
   list-style-type: none;
   justify-content: space-around;
+  padding-bottom: 5px;
 }
 
 nav ul li a {
@@ -87,65 +88,114 @@ nav ul li a:hover::after {
   height: 100vh;
   width: 100%;
   background-color: var(--main-color);
-  background-image: url(/images/hero.jpg);
+  background-image: url(/images/sosexy.jpg);
   background-size: cover;
+  margin-top: 20px;
 }
 
 .container {
   position: absolute;
   left: 10%;
   top: 30%;
-  width: 60%;
+  max-width: 80%;
 }
 
 h1 {
   margin-bottom: 1rem;
   color: var(--third-color);
   font-size: 2rem;
+  font-weight: lighter;
+  /* text-shadow: 1px 1.2px var(--second-color); */
 }
 
-.one .container p {
+.one .container p,
+.two .container p {
   color: var(--main-color);
   font-size: 19px;
+  /* text-shadow: 1px 1.2px var(--second-color); */
 }
 
-/* .two {
+.two {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--main-color);
+  background-image: url(/images/gall-image-4.jpg);
+  background-size: cover;
+  border-top: 5px solid var(--main-color);
+}
+
+.two .container p {
+  color: var(--main-color);
+  /* text-shadow: 0.5px 0.5px var(--second-color); */
+}
+
+.two .container h1 {
+  /* text-shadow: 0.5px 0.5px var(--second-color); */
+}
+
+/* About */
+.about-body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--main-color);
+  padding-top: 30px;
+}
+
+.about-section {
+  background: url(/images/gall-image-3.jpg) no-repeat left;
+  background-size: 55%;
+  background-color: var(--main-color);
+  overflow: hidden;
+  padding: 100px 0;
+  margin-left: 50px;
+}
+
+.inner-container {
+  width: 55%;
+  float: right;
+  background-color: var(--main-color);
+  padding: 150px;
+  border-radius: 5px;
+}
+
+.inner-container h1 {
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 900;
+  border-bottom: 2px solid black;
+  color: var(--second-color);
+}
+
+.text {
+  font-size: 13px;
+  color: #545454;
+  line-height: 30px;
+  text-align: justify;
+  margin-bottom: 40px;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 13px;
+  text-shadow: 0.5px 1.5px var(--third-color);
+}
+
+/* End about section */
+
+.two {
   position: absolute;
   top: 100vh;
   left: 0;
   height: 100vh;
   width: 100%;
   background-color: var(--third-color);
-} */
-
-/* About */
-.about-section {
-  background-image: url(/images/gall-image-8.jpg);
-  background-size: cover;
-  margin-top: 5em;
-  margin-right: auto;
-  margin-left: auto;
-  height: 100vh;
-  padding-top: 1px;
-}
-
-.about-wrapper {
-  max-width: 75%;
-  max-height: 75%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 3.5em;
-  border: 1px solid var(--main-color);
-  background-color: rgba(0, 0, 0, 0.3);
-  overflow-y: auto;
-}
-
-.about-section .about-text {
-  align-content: center;
-  padding: 20px;
-  line-height: 2.2em;
-  font-size: 1.4em;
-  color: var(--main-color);
 }
 
 /* Image Gallery */
@@ -203,7 +253,6 @@ textarea {
   padding: 10px;
   width: 270px;
   height: 55px;
-  /* background-color: var(--main-color); */
   background-color: rgba(0, 0, 0, 0.4);
   border: 1px solid var(--main-color);
   color: var(--main-color);
@@ -219,7 +268,6 @@ textarea::placeholder {
 .contact-submit-button {
   margin: 30px auto;
   display: block;
-  /* padding: px; */
   text-transform: uppercase;
   background-color: var(--main-color);
   background-color: rgba(0, 0, 0, 0.4);
@@ -241,52 +289,7 @@ input:hover {
   height: 100px;
 }
 
-@media screen and (max-width: 800px) {
-  .about-section .about-text {
-    font-size: 16px;
-  }
-  .about-wrapper {
-    min-height: 90%;
-    min-width: 95%;
-    margin-top: 2em;
-  }
-  .form-container {
-    padding-top: 2.5em;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .about-section .about-wrapper {
-    float: left;
-    margin-left: 20px;
-    max-width: 50%;
-    min-height: 70%;
-    border-radius: 8px;
-  }
-
-  .about-section .pop-up-image-wrapper {
-    background-image: url(/images/gall-image-4.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    object-fit: cover;
-    min-height: 45%;
-    min-width: 40%;
-    margin-top: 12%;
-    margin-right: 4%;
-    border: 3px solid var(--main-color);
-    border-radius: 50%;
-    float: right;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .pop-up-img-wrapper {
-    display: none;
-  }
-}
-
+/* Navbar */
 @media screen and (max-width: 500px) {
   nav {
     position: absolute;
@@ -298,27 +301,40 @@ input:hover {
   nav ul li a {
     font-size: 12px;
   }
+}
 
-  .about-section .about-text {
-    font-size: 10px;
+/* About Section */
+@media screen and (max-width: 1200px) {
+  .inner-container {
+    padding: 80px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .about-body {
+    padding: 0;
+  }
+  .about-section {
+    background-size: 100%;
+    padding: 100px 40px;
   }
 
-  .about-wrapper {
-    min-height: 50%;
-    min-width: 85%;
-    margin-top: 2.5em;
-    /* margin-right: 5px; */
-    /* margin-left: 5px; */
-    /* margin-bottom: 5px; */
-  }
-
-  .gall-image {
+  .inner-container {
     width: 100%;
   }
 }
 
-@media screen and (min-width: 500px) and (max-width: 800px) {
-  .about-section .about-text {
-    font-size: 25px;
+@media screen and (max-width: 600px) {
+  .about-section {
+    padding: 0;
+  }
+
+  .inner-container {
+    padding: 50px;
+    margin-top: 50px;
+  }
+
+  .form-container {
+    padding-top: 3.65rem;
   }
 }
