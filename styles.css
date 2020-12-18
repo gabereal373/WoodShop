@@ -88,7 +88,7 @@ nav ul li a:hover::after {
   height: 100vh;
   width: 100%;
   background-color: var(--main-color);
-  background-image: url(/images/sosexy.jpg);
+  background-image: url(./images/sosexy.jpg);
   background-size: cover;
   margin-top: 20px;
 }
@@ -122,7 +122,7 @@ h1 {
   height: 100vh;
   width: 100%;
   background-color: var(--main-color);
-  background-image: url(/images/gall-image-4.jpg);
+  background-image: url(./images/gall-image-4.jpg);
   background-size: cover;
   border-top: 5px solid var(--main-color);
 }
@@ -143,7 +143,7 @@ h1 {
 }
 
 .about-section {
-  background: url(/images/gall-image-3.jpg) no-repeat left;
+  background: url(./images/gall-image-3.jpg) no-repeat left;
   background-size: 55%;
   background-color: var(--main-color);
   overflow: hidden;
@@ -223,7 +223,7 @@ h1 {
 /* Contact Form */
 
 .form-container {
-  background-image: url(/images/gall-image-4.jpg);
+  background-image: url(./images/gall-image-4.jpg);
   background-size: cover;
   overflow: hidden;
   margin: auto;
