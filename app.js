@@ -1,28 +1,46 @@
-const { MongoClient } = require("mongodb")      //create client class
-const uri = "mongodb://10.0.0.208:27017"
 
+console.log("it works!")
+function validation() {
+    var name = document.getElementById("name").value;
+    var address = document.getElementById("address").value;
+    var email = document.getElementById("email").value;
+    var contact_message = document.getElementById("contact-message").value;
 
-
-
-async function contactUs() {
-    const client = new MongoClient(uri);
-    try {
-        await client.connect();
-        const db = client.db("woodshop");
-        console.log(`Connected to database ${db.databaseName}`);
-        var query = {"name" : "rocky"};
-        // var query = {"name" : name, "email" : email, "address" : address, "message" : message};
-        db.collection("contactUs").insertOne(query);
-        console.log("Insertion Complete");
-    }
-    catch (ex) {
-        console.error(`Something bad happened ${ex}`);
-
-    }
-    finally {
-        client.close();
+   
+    if(email.length > 5 && email.includes('@') && email.includes('.')) {
+        console.log('Email is valid');
+    } else {
+        alert("Invalid Email");
+        
     }
 
-};
-contactUs();
+    if(name < 3) {
+        alert("Invalid Name");
+        
+    }
+
+    if(address < 5 || address.match(/[^]{}/)) {
+        alert("Invalid Address");
+    }
+
+}
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
