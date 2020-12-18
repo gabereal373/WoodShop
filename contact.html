@@ -8,6 +8,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">  
   <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+  <script src="./app.js"></script>
   <title>Woodshop</title>
 </head>
 <body>
@@ -22,22 +24,16 @@
       </ul>
     </nav>
   </header> 
-  <form action="">
+  <form name="contactform" id="contactForm" onsubmit="return validation()" method="POST" action=https://formspree.io/f/xbjpzndw>
     <div class="form-container">
       <h1 class="contact-heading">Contact Us</h1>
-      <input id="name" type="text" placeholder="Your Name">
-      <input id="address" type="text" placeholder="Your Address">
-      <input id= "email" type="text" placeholder="Your Email">
-      <textarea id="contact-message" type="text" placeholder="Your Message"></textarea>
-      <button class="contact-submit-button" type="submit" onclick="contactUs()">Send</button>
+      <input id="name" type="text" placeholder="Your Name" name="name">
+      <input id="address" type="text" placeholder="Your Address" name="address">
+      <input id= "email" type="text" placeholder="Your Email" name="email">
+      <textarea id="contact-message" type="text" placeholder="Your Message" name="Contact Message"></textarea>
+      <button class="contact-submit-button" type="submit">Send</button>
     </div>
   </form>
-  <button class="contact-submit-button" onclick="contactUs()"></button>
-  <script src="app.js">
-    var name = name;
-    var address = address;
-    var email = email;
-    var message = contact-message;
-  </script>
+
 </body>
 </html>
