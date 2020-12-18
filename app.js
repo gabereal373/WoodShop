@@ -19,7 +19,7 @@ function validation() {
         
     }
 
-    if(address < 5 || address.name.match(/[^]{}/)) {
+    if(address < 5 || address.match(/[^]{}/)) {
         alert("Invalid Address");
     }
 
