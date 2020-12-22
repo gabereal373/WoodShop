@@ -80,12 +80,11 @@ nav ul li a:hover::after {
   transition: width 0.3s;
 }
 
-/* Home  */
 .one {
   position: absolute;
   top: 0;
   left: 0;
-  height: 100vh;
+  height: 95vh;
   width: 100%;
   background-color: var(--main-color);
   background-image: url(./images/sosexy.jpg);
