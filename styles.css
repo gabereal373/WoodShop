@@ -114,23 +114,6 @@ h1 {
   /* text-shadow: 0.5px 0.5px var(--second-color); */
 }
 
-.two {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100%;
-  background-color: var(--main-color);
-  background-image: url(./images/gall-image-4.jpg);
-  background-size: cover;
-  border-top: 5px solid var(--main-color);
-}
-
-.two .container p {
-  color: var(--main-color);
-  /* text-shadow: 0.5px 0.5px var(--second-color); */
-}
-
 /* About */
 .about-body {
   min-height: 100vh;
